@@ -30,6 +30,7 @@ The new tidy data set contains the following variables:
 1. Subject: the id of the subject for the data on the row.
 2. Activity: the activity the subject was doing when the data from this row was collected.
 3. All following columns contain the mean of the measurements on all trials for a subject and an activity:
+
 ..* tBodyAcc-mean()-X
 ..* tBodyAcc-mean()-Y
 ..* tBodyAcc-mean()-Z
