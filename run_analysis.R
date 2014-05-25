@@ -36,7 +36,7 @@ data3<-data.table(data2)
 
 ## Calculates the average of each colum in data3 for each Subject and each Activity
 dataClean<-data3[,lapply(.SD, mean),by=list(Subject,Activity)]
-
+head(dataClean)
 ##Exports tidyDataSet
 write.table(dataClean,file="tidyDataSet.txt",row.names=FALSE,quote=FALSE)
-
+colnames(dataClean,file="features",row.names=FALSE,quote=FALSE,sep="\n")
